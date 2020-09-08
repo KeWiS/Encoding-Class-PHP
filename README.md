@@ -6,4 +6,5 @@ Encoding to UTF-8 using browser:
 3. Program is using user's input values to encode and give results encoded UTF-8.
 4. In order to encode text input simply write text in text field and click SEND button.
 5. After sending request to server Encoding class is checking coding of sent text and then encode value to UTF-8.
-6. ISO 8859-2 input coding is used to easily check if encoding was successful
+6. User input is text file which is in coding ISO 8859-2, UTF-8 or Windows 1250
+7. In main repository there are 2 different folders: Browser input version is for inputs from text field in browser; File input version is for file inputs
