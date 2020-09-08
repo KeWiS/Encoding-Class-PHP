@@ -7,19 +7,22 @@
             //Detecting ISO-8859-2 coding (in specific order)
             $coding = mb_detect_encoding($string, "ISO-8859-2,UTF-8");
 
-            //Commented lines for checking if everything runs correctly, used for testings
-            /*echo "Coding of string before encoding: $coding<br>";
-            echo $string;*/
+            //Test lines for checking if everything runs correctly, used for testings
+            //Coding of string before encoding
+            echo "Coding of string before encoding: $coding<br>";
+            //String before encoding
+            echo $string;
 
             //Encoding input string
             $encoded = iconv($coding, "UTF-8", $string);
 
-            //Commented lines for checking if everything runs correctly, used for testings
+            //Test lines for checking if everything runs correctly, used for testings
             //Detecting if method converted correctly
-            /*$coding_encoded = mb_detect_encoding($encoded, "UTF-8");
-
+            $coding_encoded = mb_detect_encoding($encoded, "UTF-8");
+            //Coding of string after encoding
             echo "<br>Coding of string after encoding: $coding_encoded<br>";
-            echo $encoded;*/
+            //String after encoding
+            echo $encoded;
 
             //Returning encoded string
             return $encoded;
