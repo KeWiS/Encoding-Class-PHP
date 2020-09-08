@@ -28,6 +28,7 @@
             return $encoded;
         }
     }
+    //Checking if user sent request from button next to text input
     if(array_key_exists('string', $_POST)){
         //Getting user's input from index.html
         $string = $_POST['string'];
