@@ -18,6 +18,7 @@
                 if($check_verification != $coding_check)    $coding = "Windows-1250";
             }
 
+            //Test lines for checking if everything runs correctly, used for testing
             //Coding of string before encoding
             echo "Coding of string before encoding: $coding<br>";
             //String before encoding
@@ -26,7 +27,7 @@
             //Encoding input string
             $encoded = iconv($coding, "UTF-8", $string);
 
-            //Test lines for checking if everything runs correctly, used for testings
+            //Test lines for checking if everything runs correctly, used for testing
             //Detecting if method converted correctly
             $coding_encoded = mb_detect_encoding($encoded, "UTF-8");
             //Coding of string after encoding
